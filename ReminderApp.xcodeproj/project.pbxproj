@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2C86951320036177000AEF5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C86951220036177000AEF5E /* AppDelegate.swift */; };
-		2C86951520036177000AEF5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C86951420036177000AEF5E /* ViewController.swift */; };
 		2C86951820036177000AEF5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C86951620036177000AEF5E /* Main.storyboard */; };
 		2C86951A20036177000AEF5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C86951920036177000AEF5E /* Assets.xcassets */; };
 		2C86951D20036177000AEF5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C86951B20036177000AEF5E /* LaunchScreen.storyboard */; };
 		2C86952820036177000AEF5E /* ReminderAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C86952720036177000AEF5E /* ReminderAppTests.swift */; };
 		2C86953320036177000AEF5E /* ReminderAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C86953220036177000AEF5E /* ReminderAppUITests.swift */; };
+		2C86954120036EB0000AEF5E /* ReminderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C86954020036EB0000AEF5E /* ReminderController.swift */; };
+		2C86954320036EDD000AEF5E /* ReminderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C86954220036EDD000AEF5E /* ReminderCell.swift */; };
+		2C86954820038A25000AEF5E /* ReminderApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C86954620038A25000AEF5E /* ReminderApp.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		2C86950F20036177000AEF5E /* ReminderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReminderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C86951220036177000AEF5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2C86951420036177000AEF5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2C86951720036177000AEF5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C86951920036177000AEF5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C86951C20036177000AEF5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		2C86952E20036177000AEF5E /* ReminderAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReminderAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C86953220036177000AEF5E /* ReminderAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderAppUITests.swift; sourceTree = "<group>"; };
 		2C86953420036177000AEF5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C86954020036EB0000AEF5E /* ReminderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderController.swift; sourceTree = "<group>"; };
+		2C86954220036EDD000AEF5E /* ReminderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCell.swift; sourceTree = "<group>"; };
+		2C86954720038A25000AEF5E /* ReminderApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ReminderApp.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				2C86951220036177000AEF5E /* AppDelegate.swift */,
-				2C86951420036177000AEF5E /* ViewController.swift */,
 				2C86951620036177000AEF5E /* Main.storyboard */,
 				2C86951920036177000AEF5E /* Assets.xcassets */,
 				2C86951B20036177000AEF5E /* LaunchScreen.storyboard */,
 				2C86951E20036177000AEF5E /* Info.plist */,
+				2C86954020036EB0000AEF5E /* ReminderController.swift */,
+				2C86954620038A25000AEF5E /* ReminderApp.xcdatamodeld */,
+				2C86954220036EDD000AEF5E /* ReminderCell.swift */,
 			);
 			path = ReminderApp;
 			sourceTree = "<group>";
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C86951520036177000AEF5E /* ViewController.swift in Sources */,
 				2C86951320036177000AEF5E /* AppDelegate.swift in Sources */,
+				2C86954320036EDD000AEF5E /* ReminderCell.swift in Sources */,
+				2C86954120036EB0000AEF5E /* ReminderController.swift in Sources */,
+				2C86954820038A25000AEF5E /* ReminderApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +566,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2C86954620038A25000AEF5E /* ReminderApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2C86954720038A25000AEF5E /* ReminderApp.xcdatamodel */,
+			);
+			currentVersion = 2C86954720038A25000AEF5E /* ReminderApp.xcdatamodel */;
+			path = ReminderApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2C86950720036177000AEF5E /* Project object */;
 }
